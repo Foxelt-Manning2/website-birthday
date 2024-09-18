@@ -9,13 +9,16 @@
         <link rel="stylesheet" href="birthday.css">
     </head>
     <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
         <video margin="auto" width='100%' controls autoplay id="konosuba">
             <source src="background explosion.mp4" type="video/mp4">
         </video>
-        <h1 id="bday-text"> Welcome </h1>
-        <div id="bodymark">
+        <div id="capture">
+       
+         <h1 id="bday-text"> Welcome </h1>
+           <div id="bodymark">
             <article id="layer">
-                
                 <img src="" id="pic">
                 <p id="pText">This is a web application that gives you the ability to create a birthday message with animation effects</p>
                 <form>
@@ -24,9 +27,11 @@
                     <br>
                     <input id="image" type="file" accept="image/*">
                 </form>
-              
+               
             </article>
-        </div>
+         </div>
+       </div>
+        <button id="screenshotButton">Take Screenshot</button>
         <script src="birthday.js"></script>
     </body>
 </html>

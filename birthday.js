@@ -16,7 +16,15 @@ document.addEventListener('DOMContentLoaded', function () {
             const bdayText = document.getElementById('bday-text');
             bdayText.style.display = 'block';
             bdayText.innerHTML = '3';
-
+            document.getElementById('screenshotButton').addEventListener('click', function() {
+                html2canvas(document.querySelector("#capture")).then(canvas => {
+                    // Convert canvas to an image and trigger download
+                    const screenshotLink = document.createElement('a');
+                    screenshotLink.href = canvas.toDataURL('image/png');
+                    screenshotLink.download = 'screenshot.png';  // Name of the downloaded image
+                    screenshotLink.click();  // Trigger download
+                });
+            });
             let count = 3;
             const countdown = setInterval(function () {
                 count--;
@@ -50,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             // Reset animation and display elements
                             bdayText.style.animation = 'bday-text 7s linear infinite';
                             document.getElementById('bodymark').style.display = 'block';
+                            document.getElementById('screenshotButton').style.display='block';
                             document.getElementById('pic').style.display = 'block';
                             document.getElementById('pText').innerHTML = 'Wishing you longevity, happiness, and all the best health.';
                             document.getElementById('pText').style.display = 'block';

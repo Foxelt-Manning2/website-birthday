@@ -4,7 +4,7 @@ body {
     background-color: #180438; 
 }
 
-div {
+#bodymark{
     height: auto;
     width: auto;
     padding: 20px;
@@ -46,7 +46,7 @@ video {
     background-color: black;
 }
 
-#counter {
+#counter,#screenshotButton {
     display: none;
 }
 
@@ -75,4 +75,9 @@ img {
     75% { color: #006eff; left: 50px; top: 50px; }
     85% { color: #0000ff; left: 20px; top: 0px; }
     100% { color: #ff0090; left: 0px; top: 0px; }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 }
