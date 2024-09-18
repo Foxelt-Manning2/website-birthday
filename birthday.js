@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('pic').src = e.target.result;
             };
             reader.readAsDataURL(file);
+            
 
             // Turn the screen black and start the countdown
             document.body.style.backgroundColor = 'black';
