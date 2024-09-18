@@ -1,0 +1,78 @@
+body {
+    padding: 20px;
+    margin: 20px;
+    background-color: #180438; 
+}
+
+div {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    margin: 20px;
+    background-color: #6200ff; 
+}
+
+#layer {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffef90;
+}
+
+h1 {
+    height: 100px;
+    text-align: center;
+    position: relative;
+    animation: bday-text 7s linear infinite;
+    text-shadow: 2px #c35c4a, 2px 1px #efef00;
+}
+
+form {
+    text-align: center;
+    border-color: #c35c4a;
+    display: block;
+}
+
+video {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+    z-index: 1000;
+    background-color: black;
+}
+
+#counter {
+    display: none;
+}
+
+p, h2 {
+    text-align: center;
+    color: rgb(19, 78, 150);
+}
+
+#submit:hover, #image:hover {
+    text-align: center;
+    color: rgb(150, 80, 9);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+img {
+    margin-left: 250px;
+    margin-right: 0px;
+    width: 60%;
+}
+
+@keyframes bday-text {
+    0% { color: #ff0000; left: 0px; top: 0px; }
+    25% { color: #c35c4a; left: 20px; top: 0px; }
+    50% { color: #ffef90; left: 50px; top: 50px; }
+    65% { color: #efef00; left: 65px; top: 65px; }
+    75% { color: #006eff; left: 50px; top: 50px; }
+    85% { color: #0000ff; left: 20px; top: 0px; }
+    100% { color: #ff0090; left: 0px; top: 0px; }
+}
